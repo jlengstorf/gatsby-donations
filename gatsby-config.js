@@ -14,7 +14,7 @@ module.exports = {
       resolve: "gatsby-theme-stripe-non-profit",
       options: {
         stripePublicKey: process.env.STRIPE_API_PUBLIC,
-        successUrl: "http://localhost:8000/thank-you",
+        successUrl: `${process.env.URL}/thank-you`,
       },
     },
   ],
